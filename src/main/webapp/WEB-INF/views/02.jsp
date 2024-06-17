@@ -10,20 +10,27 @@
 </head>
 <body>
 	<h1>연산</h1>
-	<p>
+	<h3>산술연산</h3>
 	<!-- 산술연산 -->
-	${iVal + 10 * 100 / 2 }<br />
-	${fVal + 10 * 100 / 2 }<br />
+	<ul>
+		<li>${iVal + 10 * 100 / 2 }</li>
+		<li>${fVal + 10 * 100 / 2 }</li>
+	</ul>
 	
 	<!-- 비교 연산 -->
-	${iVal < 100 }<br />
+	<ul>
+		<li>${iVal < 100 }</li>
+	</ul>
 	
 	<!-- 논리 연산 -->
-	${iVal == 1000 || fVal < 200 }<br />
-	
+	<ul>
+		<li>${iVal == 1000 || fVal < 200 }</li>
+	</ul>
 	<!-- 객체의 null 비교 -->
-	reqVal이 null인가? ${empty reqVal }<br />
-	userVo가 null이 아닌가? ${not empty userVo }<br />
+	<ul>
+		<li>reqVal이 null인가? ${empty reqVal }</li>
+		<li>userVo가 null이 아닌가? ${not empty userVo }</li>
+	</ul>
 	
 	</p>
 </body>
